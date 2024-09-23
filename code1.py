@@ -69,7 +69,7 @@ if uploaded_file is not None:
 
 # Display images with labels and filenames from the dataset
 folder_path = 'C:\\Users\\manis\\Tulu lipi codes\\aug_resized_images2'  # Update with the actual path to your dataset
-dataset_images = load_and_preprocess_images(folder_path)
+#dataset_images = load_and_preprocess_images(folder_path)
 
-for data in dataset_images:
-    st.image(data['image'].reshape((64, 64)), caption=f"Label: {data['label']}, Filename: {data['filename']}", use_column_width=True)
+#for data in dataset_images:
+ #   st.image(data['image'].reshape((64, 64)), caption=f"Label: {data['label']}, Filename: {data['filename']}", use_column_width=True)
