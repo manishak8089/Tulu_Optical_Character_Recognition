@@ -21,3 +21,8 @@ _You can imagine the dataset as a collection of scanned pages, where each charac
 
 **2. Preprocessing**
 _The scanned images were preprocessed to remove noise and prepare them for character extraction. This involved converting the images to grayscale and applying Gaussian blur._
+
+<p align="center">
+  <img src="./images/image2.jpg" alt="Dataset Example 1" width="45%" />
+</p>
+
