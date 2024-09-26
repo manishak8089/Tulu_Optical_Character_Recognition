@@ -13,6 +13,10 @@ _You can imagine the dataset as a collection of scanned pages, where each charac
 
 <p align="center">
   <img src="./images/image1.jpg" alt="Dataset Example 1" width="45%" />
-  <img src="./images/image2.jpg" alt="Dataset Example 2" width="45%" />
+  
 </p>
 
+<p align="center">
+  
+  <img src="./images/image9.png" alt="Dataset Example 2" width="45%" height="200"  />
+</p>
