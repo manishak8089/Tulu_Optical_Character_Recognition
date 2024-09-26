@@ -13,10 +13,11 @@ _You can imagine the dataset as a collection of scanned pages, where each charac
 
 <p align="center">
   <img src="./images/image1.jpg" alt="Dataset Example 1" width="45%" />
-  
 </p>
 
 <p align="center">
-  
-  <img src="./images/image9.png" alt="Dataset Example 2" width="45%" height="200"  />
+  <img src="./images/image9.png" alt="Dataset Example 2" width="50%"  />
 </p>
+
+**2. Preprocessing**
+_The scanned images were preprocessed to remove noise and prepare them for character extraction. This involved converting the images to grayscale and applying Gaussian blur._
