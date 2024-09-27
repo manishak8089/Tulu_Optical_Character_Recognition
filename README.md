@@ -11,35 +11,59 @@ _The dataset for this project consisted of A4 sheets containing handwritten Tulu
 
 _You can imagine the dataset as a collection of scanned pages, where each character was neatly written in individual cells of the table, which allowed for clear segmentation and character extraction._
 
-### Image Example:
+**Image Example:**
 <p align="center">
   <img src="./images/image1.jpg" alt="Dataset Example 1" width="45%" height="300px" />
   <img src="./images/image9.png" alt="Dataset Example 2" width="50%" height="300px" />
 </p>
 
 **2. Preprocessing**
+
 _The scanned images were preprocessed to remove noise and prepare them for character extraction. This involved converting the images to grayscale and applying Gaussian blur._
 
-### Image Example (Grayscale and Blurred Image):
+**Image Example (Grayscale and Blurred Image):**
 <p align="center">
   <img src="./images/image2.jpg" alt="Dataset Example 1" width="45%" />
 </p>
 
 **3. Character Extraction**
+
 _Each scanned image, containing multiple characters in a 6x9 grid, was segmented into individual characters based on their positions in the table. This process ensured that each character was isolated and separated for further analysis. Since the Tulu language consists of 50 alphabets, all characters were carefully segmented from the table and stored in corresponding columns. This structured approach allowed for efficient organization and storage of the characters, making them easily accessible for the next stages of processing._
 
-### Image Example (Extracted Characters):
+**Image Example (Extracted Characters):**
 <p align="center">
   <img src="./images/image3.png" alt="Dataset Example 1" width="45%" height="300px" />
   <img src="./images/image4.png" alt="Dataset Example 1" width="45%" height="300px"/>
 </p>
 
 **4. Binarization**
+
 _Binarization was applied to the grayscale images, converting them into black-and-white format to enhance contrast and make the characters stand out more clearly._
 
-### Image Example (Binarized Image):
+**Image Example (Some binarized Image):**
+<p align="center">
+  <img src="./images/image5.png" alt="Dataset Example 1" width="10%"  />
+  <img src="./images/image6.png" alt="Dataset Example 1" width="10%" />
+   <img src="./images/image7.png" alt="Dataset Example 1" width="10%" />
+</p>
 
 **5. Resizing and Cropping**
+
 _The extracted characters were resized to a uniform size of 100x100 pixels to ensure consistency across the dataset. Cropping was also performed to eliminate unnecessary borders around the characters._
 
-### Image Example (Resized and Cropped Image):
+**6. Augmentation**
+
+_Data augmentation was used to increase the size of the dataset by applying transformations such as translations and slants. This step made the model more robust by allowing it to recognize characters in varying orientations._
+
+**Image Example (Augmented Image):**
+
+
+**7. Model Training**
+_The model was trained using the Random Forest algorithm, which achieved an accuracy of 92.35%. The final model was tested on various font styles and sizes to ensure versatility._
+
+**Conclusion**
+_This OCR system successfully processes Tulu manuscripts, allowing for the digitization of ancient texts. By handling diverse character styles and leveraging machine learning, this project paves the way for preserving the Tulu language in a modern format._
+
+<p align="center">
+  <img src="./images/image8.png" alt="Dataset Example 1" width="45%" />
+</p>
