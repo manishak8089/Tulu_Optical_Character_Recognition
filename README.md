@@ -33,3 +33,13 @@ _Each scanned image, containing multiple characters in a 6x9 grid, was segmented
   <img src="./images/image3.png" alt="Dataset Example 1" width="45%" height="300px" />
   <img src="./images/image4.png" alt="Dataset Example 1" width="45%" height="300px"/>
 </p>
+
+**4. Binarization**
+_Binarization was applied to the grayscale images, converting them into black-and-white format to enhance contrast and make the characters stand out more clearly._
+
+### Image Example (Binarized Image):
+
+**5. Resizing and Cropping**
+_The extracted characters were resized to a uniform size of 100x100 pixels to ensure consistency across the dataset. Cropping was also performed to eliminate unnecessary borders around the characters._
+
+### Image Example (Resized and Cropped Image):
