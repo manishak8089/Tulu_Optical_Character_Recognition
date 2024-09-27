@@ -11,18 +11,25 @@ _The dataset for this project consisted of A4 sheets containing handwritten Tulu
 
 _You can imagine the dataset as a collection of scanned pages, where each character was neatly written in individual cells of the table, which allowed for clear segmentation and character extraction._
 
+### Image Example:
 <p align="center">
-  <img src="./images/image1.jpg" alt="Dataset Example 1" width="45%" />
-</p>
-
-<p align="center">
-  <img src="./images/image9.png" alt="Dataset Example 2" width="50%"  />
+  <img src="./images/image1.jpg" alt="Dataset Example 1" width="45%" height="300px" />
+  <img src="./images/image9.png" alt="Dataset Example 2" width="50%" height="300px" />
 </p>
 
 **2. Preprocessing**
 _The scanned images were preprocessed to remove noise and prepare them for character extraction. This involved converting the images to grayscale and applying Gaussian blur._
 
+### Image Example (Grayscale and Blurred Image):
 <p align="center">
   <img src="./images/image2.jpg" alt="Dataset Example 1" width="45%" />
 </p>
 
+**3. Character Extraction**
+_Each scanned image, containing multiple characters in a 6x9 grid, was segmented into individual characters based on their positions in the table. This process ensured that each character was isolated and separated for further analysis. Since the Tulu language consists of 50 alphabets, all characters were carefully segmented from the table and stored in corresponding columns. This structured approach allowed for efficient organization and storage of the characters, making them easily accessible for the next stages of processing._
+
+### Image Example (Extracted Characters):
+<p align="center">
+  <img src="./images/image3.png" alt="Dataset Example 1" width="45%" height="300px" />
+  <img src="./images/image4.png" alt="Dataset Example 1" width="45%" height="300px"/>
+</p>
