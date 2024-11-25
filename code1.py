@@ -8,8 +8,15 @@ import os
 import numpy as np
 from skimage import io, color, transform
 
-# Load your trained model
-model = joblib.load('random_forest_model.pkl')
+# Function to load the model from a URL
+def load_model_from_url(url):
+    response = requests.get(url)
+    model_file = BytesIO(response.content)
+    return joblib.load(model_file)
+
+# Load your trained model from GitHub release
+model_url = 'https://github.com/manishak8089/Tulu_Optical_Character_Recognition/releases/download/v1.0/random_forest_model.pkl'
+model = load_model_from_url(model_url)
 
 # Function to read and preprocess images along with labels
 def load_and_preprocess_images(folder_path):
