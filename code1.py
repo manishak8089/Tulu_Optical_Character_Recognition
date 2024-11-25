@@ -1,13 +1,11 @@
-# Install necessary libraries
-# pip install streamlit scikit-learn opencv-python
-
 import streamlit as st
 import cv2
 import joblib
 import os
-import requests
 import numpy as np
 from skimage import io, color, transform
+import requests
+from io import BytesIO
 
 # Function to load the model from a URL
 def load_model_from_url(url):
@@ -70,10 +68,6 @@ if uploaded_file is not None:
     # Display the OCR result along with label and filename
     st.write("OCR Result: ")
     st.write(f"The image found in the folder named: {prediction[0]}")
-    
-    # Display label and filename of the uploaded image
-    #st.write(f"Label: {prediction[0]}")
-    #st.write(f"Filename: {uploaded_file.name}")
 
 # Display images with labels and filenames from the dataset
 folder_path = 'C:\\Users\\manis\\Tulu lipi codes\\aug_resized_images2'  # Update with the actual path to your dataset
