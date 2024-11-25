@@ -5,6 +5,7 @@ import streamlit as st
 import cv2
 import joblib
 import os
+import requests
 import numpy as np
 from skimage import io, color, transform
 
